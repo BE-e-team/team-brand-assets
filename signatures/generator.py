@@ -27,7 +27,7 @@ def render_signature(member):
         "TEAM_NAME": data["team_name"],
         "AFFILIATION": data["affiliation"],
         "WEBSITE": data["website"],
-        "DEPARTMENT": data["deparment"],
+        "DEPARTMENT": data["department"],
         "LOGO_URL": data["logo_url"],
     }
 

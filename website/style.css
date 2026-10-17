@@ -46,6 +46,7 @@ a {
 .brand {
   display: flex;
   align-items: center;
+  height: 100px;
   gap: 13px;
 }
 

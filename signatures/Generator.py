@@ -5,7 +5,7 @@ from pathlib import Path
 from html import escape
 
 ROOT = Path(__file__).resolve().parent
-OUTPUT = ROOT / "generated"
+OUTPUT = ROOT / "individual signatures"
 
 # Read the shared configuration and master template.
 data = json.loads((ROOT / "members.json").read_text(encoding="utf-8"))

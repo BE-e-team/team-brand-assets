@@ -456,7 +456,7 @@ h2 {
     }
 
     .gallery-item-large .image-placeholder {
-      min-height: 250px;
+      min-height: 50px;
     }
 
     .activity-heading {

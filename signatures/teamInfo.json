@@ -1,0 +1,20 @@
+{
+  "team_name": "BE/e team",
+  "affiliation": "Eindhoven University of Technology",
+  "website": "https://placeholder.somewhere",
+  "department": "High Tech Systems Honours",
+  "members": [
+    {
+      "id": "michael",
+      "name": "Michael Marsh",
+      "role": "Sensing Researcher",
+      "email": "m.r.marsh@student.tue.nl"
+    },
+    {
+      "id": "tanya",
+      "name": "Tanya Veremchuk",
+      "role": "Sensing Researcher",
+      "email": "t.veremchuk@student.tue.nl"
+    }
+  ]
+}

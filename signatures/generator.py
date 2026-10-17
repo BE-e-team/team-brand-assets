@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parent
 OUTPUT = ROOT / "individual signatures"
 
 # Read the shared configuration and master template.
-data = json.loads((ROOT / "members.json").read_text(encoding="utf-8"))
+data = json.loads((ROOT / "teamInfo.json").read_text(encoding="utf-8"))
 template = (ROOT / "template.html").read_text(encoding="utf-8")
 
 OUTPUT.mkdir(exist_ok=True)

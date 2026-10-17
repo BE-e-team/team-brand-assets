@@ -28,7 +28,7 @@ jobs:
 
       - name: Generate signatures
         working-directory: signatures
-        run: python generate.py
+        run: python generator.py
 
       - name: Commit generated signatures
         run: |

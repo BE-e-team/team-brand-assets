@@ -4,109 +4,186 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Research, projects and people at our research team.">
-  <title>Our Research Team</title>
-
-  <!-- Link to the stylesheet in this same folder -->
+  <meta name="description" content="Project overview, development and recent activities.">
+  <title>Project Title | Project Team</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="Our Research Team home">
+    <a class="brand" href="#home" aria-label="Project home">
       <span class="logo-placeholder" aria-hidden="true">LOGO</span>
-      <span class="brand-name">OUR RESEARCH TEAM</span>
+      <span class="brand-name">PROJECT TEAM</span>
     </a>
 
     <nav aria-label="Main navigation">
-      <a href="#research">Research</a>
-      <a href="#projects">Projects</a>
-      <a href="#team">Team</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#activities">Updates</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
+    <!-- PROJECT INTRODUCTION -->
     <section class="hero" id="home">
-      <p class="eyebrow">RESEARCH · ENGINEERING · DISCOVERY</p>
-      <h1>Understanding the world. Building what comes next.</h1>
+      <p class="eyebrow">EINDHOVEN UNIVERSITY OF TECHNOLOGY · HIGH TECH SYSTEMS</p>
+      <h1>Project Title</h1>
       <p class="hero-text">
-        We are a research team exploring practical solutions to
-        interesting technical challenges. We combine scientific
-        understanding, experimentation and engineering to turn
-        ideas into working systems.
+        A short introduction to the project. Explain the problem
+        you're exploring, what you're building, and why it matters.
+        Keep this concise and give visitors a reason to explore further.
       </p>
-      <a class="button" href="#research">Explore our work <span>→</span></a>
+      <a class="button" href="#about">
+        Discover the project <span>→</span>
+      </a>
     </section>
 
-    <section class="section" id="research">
+    <!-- ABOUT THE PROJECT -->
+    <section class="section" id="about">
       <div class="section-heading">
-        <p class="eyebrow">WHAT WE DO</p>
-        <h2>Research with a practical purpose.</h2>
+        <p class="eyebrow">THE PROJECT</p>
+        <h2>From an interesting question to a practical solution.</h2>
+      </div>
+
+      <div class="about-content">
         <p>
-          We investigate problems, test ideas and develop approaches
-          that can be applied beyond the laboratory.
+          Describe the project's motivation and objectives here.
+          What are you trying to understand, design or demonstrate?
+          What makes the problem interesting or challenging?
+        </p>
+        <p>
+          Add a little more detail about your approach, the methods
+          you're using, and what you hope to achieve. This section
+          can evolve as the project develops.
+        </p>
+      </div>
+    </section>
+
+    <!-- IMAGE GALLERY -->
+    <section class="section" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow">IN THE WORKS</p>
+        <h2>Ideas taking shape.</h2>
+        <p>
+          A look inside the project: experiments, prototypes,
+          design iterations and results.
         </p>
       </div>
 
-      <div class="card-grid">
-        <article class="research-card">
-          <span class="card-number">01 / EXPLORE</span>
-          <h3>Fundamental understanding</h3>
+      <div class="gallery-grid">
+        <figure class="gallery-item gallery-item-large">
+          <img
+            src="assets/WebsiteImg1.jpg"
+            alt="Our first research trip"
+            class="project-image"
+          >
+          <figcaption>
+            <strong>The concept</strong>
+            <span>An overview of the initial idea.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <div class="image-placeholder">
+            <span>Prototype image</span>
+          </div>
+          <figcaption>
+            <strong>Building & testing</strong>
+            <span>Early prototypes and experiments.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <div class="image-placeholder">
+            <span>Results image</span>
+          </div>
+          <figcaption>
+            <strong>What we've learned</strong>
+            <span>Observations, results and improvements.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- RECENT ACTIVITIES: HORIZONTAL SCROLLER -->
+    <section class="section activity-section" id="activities">
+      <div class="activity-heading">
+        <div>
+          <p class="eyebrow">PROJECT LOG</p>
+          <h2>Recent activities.</h2>
+          <p>Follow the project as it develops.</p>
+        </div>
+        <div class="scroll-hint" aria-hidden="true">
+          SCROLL TO EXPLORE →
+        </div>
+      </div>
+
+      <div class="activity-scroller">
+        <article class="activity-card">
+          <div class="activity-image-placeholder">01</div>
+          <p class="activity-date">DATE · UPDATE 01</p>
+          <h3>Starting with the problem</h3>
           <p>
-            Developing a clear understanding of the physics and
-            engineering principles behind real-world problems.
+            Defining the challenge, exploring existing approaches
+            and deciding what we want to investigate.
           </p>
         </article>
 
-        <article class="research-card">
-          <span class="card-number">02 / EXPERIMENT</span>
-          <h3>Measurement & testing</h3>
+        <article class="activity-card">
+          <div class="activity-image-placeholder">02</div>
+          <p class="activity-date">DATE · UPDATE 02</p>
+          <h3>First designs and ideas</h3>
           <p>
-            Designing experiments, collecting data and comparing
-            observations with theoretical predictions.
+            Turning early concepts into something concrete that
+            we can analyse, test and improve.
           </p>
         </article>
 
-        <article class="research-card" id="projects">
-          <span class="card-number">03 / BUILD</span>
-          <h3>Applied innovation</h3>
+        <article class="activity-card">
+          <div class="activity-image-placeholder">03</div>
+          <p class="activity-date">DATE · UPDATE 03</p>
+          <h3>Testing our approach</h3>
           <p>
-            Turning promising ideas into prototypes, tools and
-            solutions that can be tested in practice.
+            Building experiments, collecting observations and
+            learning from what works — and what doesn't.
+          </p>
+        </article>
+
+        <article class="activity-card">
+          <div class="activity-image-placeholder">04</div>
+          <p class="activity-date">DATE · UPDATE 04</p>
+          <h3>What's next?</h3>
+          <p>
+            Refining the design and planning the next stage
+            of the project.
           </p>
         </article>
       </div>
     </section>
 
-    <section class="team-section" id="team">
-      <div>
-        <p class="eyebrow">THE PEOPLE</p>
-        <h2>Curious minds, working together.</h2>
-      </div>
-      <p>
-        We bring together different skills and perspectives to
-        investigate challenging questions. More information about
-        our team members and their work will be added here.
-      </p>
-    </section>
-
+    <!-- CONTACT -->
     <section class="contact-section" id="contact">
       <p class="eyebrow">GET IN TOUCH</p>
-      <h2>Have a question or an idea?</h2>
+      <h2>Interested in what we're doing?</h2>
       <p>
-        We welcome conversations about our work, potential
-        collaborations and interesting technical problems.
+        Have a question, an idea or an opportunity to collaborate?
+        We'd be happy to hear from you.
       </p>
-      <a class="text-link" href="mailto:your-team@example.com">
-        Contact the team →
-      </a>
+      <div class="contact-links">
+        <a class="text-link" href="mailto:your-team@example.com">
+          Email the team →
+        </a>
+        <a class="text-link" href="https://www.tue.nl/">
+          Eindhoven University of Technology →
+        </a>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <a class="footer-brand" href="#home">OUR RESEARCH TEAM</a>
-    <p>Researching. Experimenting. Building.</p>
-    <p class="copyright">© <span id="year">2026</span> Our Research Team</p>
+    <a class="footer-brand" href="#home">PROJECT TITLE</a>
+    <p>Developed by the project team · TU/e High Tech Systems</p>
+    <p class="copyright">© 2026 Project Team</p>
   </footer>
 </body>
 </html>

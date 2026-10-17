@@ -293,4 +293,187 @@ h2 {
     margin-bottom: 45px;
     padding: 28px;
   }
+  /* Project introduction */
+  .about-content {
+    max-width: 720px;
+    color: var(--muted);
+    font-size: 16px;
+  }
+
+  .about-content p {
+    margin-bottom: 20px;
+  }
+
+  /* Project image gallery */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .gallery-item {
+    min-width: 0;
+    margin: 0;
+  }
+
+  .gallery-item-large {
+    grid-column: 1 / -1;
+  }
+
+  .image-placeholder {
+    min-height: 240px;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    border: 1px dashed #aab8c7;
+    border-radius: 8px;
+    background: #edf1f5;
+    color: #667384;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .gallery-item-large .image-placeholder {
+    min-height: 380px;
+  }
+
+  .gallery-item figcaption {
+    display: grid;
+    gap: 3px;
+    padding-top: 12px;
+  }
+
+  .gallery-item figcaption strong {
+    font-size: 15px;
+  }
+
+  .gallery-item figcaption span {
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  /* Recent activities */
+  .activity-section {
+    overflow: hidden;
+  }
+
+  .activity-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 28px;
+  }
+
+  .activity-heading .section-heading {
+    margin-bottom: 0;
+  }
+
+  .activity-heading p:not(.eyebrow) {
+    margin-bottom: 0;
+    color: var(--muted);
+  }
+
+  .scroll-hint {
+    padding-bottom: 5px;
+    color: var(--accent);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    white-space: nowrap;
+  }
+
+  .activity-scroller {
+    display: grid;
+    grid-auto-columns: minmax(250px, 32%);
+    grid-auto-flow: column;
+    gap: 18px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding: 2px 2px 20px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: #aab8c7 transparent;
+  }
+
+  .activity-card {
+    min-width: 0;
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    scroll-snap-align: start;
+  }
+
+  .activity-image-placeholder {
+    min-height: 150px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    background: #edf1f5;
+    color: #8090a1;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .activity-date {
+    margin-bottom: 8px;
+    color: var(--accent);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .activity-card h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 1.35;
+  }
+
+  .activity-card > p:last-child {
+    margin-bottom: 4px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  /* Contact links */
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 28px;
+  }
+
+  /* Responsive layout */
+  @media (max-width: 700px) {
+    .gallery-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .gallery-item-large {
+      grid-column: auto;
+    }
+
+    .gallery-item-large .image-placeholder {
+      min-height: 250px;
+    }
+
+    .activity-heading {
+      align-items: start;
+      flex-direction: column;
+    }
+
+    .activity-scroller {
+      grid-auto-columns: minmax(240px, 82%);
+    }
+    .project-image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: 240px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+
 }

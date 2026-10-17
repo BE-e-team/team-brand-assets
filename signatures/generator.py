@@ -22,7 +22,7 @@ def safe_filename(value):
 def render_signature(member):
     values = {
         "NAME": member["name"],
-        "POSITION": member["role"],
+        "ROLE": member["role"],
         "EMAIL": member["email"],
         "TEAM_NAME": data["team_name"],
         "AFFILIATION": data["affiliation"],

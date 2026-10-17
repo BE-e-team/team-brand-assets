@@ -28,7 +28,6 @@ def render_signature(member):
         "AFFILIATION": data["affiliation"],
         "WEBSITE": data["website"],
         "DEPARTMENT": data["department"],
-        "LOGO_URL": data["logo_url"],
     }
 
     # Escape personal text and URLs before inserting them into HTML.
